@@ -13,3 +13,22 @@
 body {
     background-color: #1DA6F5 !important;
 }
+
+h2 {
+    color: white;
+    padding-bottom: 15px;
+}
+
+.light-text {
+    color: white;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+h3 {
+    padding-top: 0;
+    margin-top: 0;
+}
