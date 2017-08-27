@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { AddressService } from './address.service';
+import { HttpClient } from '@angular/common/http';
+
+interface IProfileResponse {
+  results: any;
+}
 
 @Component({
   selector: 'app-address',
@@ -8,7 +12,7 @@ import { AddressService } from './address.service';
 })
 export class AddressComponent implements OnInit {
 
-  constructor(private addressService: AddressService) { 
+  constructor(private http: HttpClient) { 
 
   }
 
@@ -16,14 +20,24 @@ export class AddressComponent implements OnInit {
   }
 
   public currentCount = 0;
-  public data = {};
+  public data = "";
   
   public incrementCounter() {
       this.currentCount++;
   }
 
-  public getDataFromService() {
-    this.data = this.addressService.getData();
+  public createProfile() {
+    var user = {"user":{
+      "username": "coolio",
+      "email":"justinssssssss@aladin.com", 
+      "password":"p@ssb1tch!"}
+    };
+
+    this.http.post<IProfileResponse>('https://morning-ridge-70177.herokuapp.com/api/users', user)
+    .subscribe(data=> {
+      // data is now an instance of type ItemsResponse, so you can do this:
+      this.data = JSON.stringify(data.results);
+    });
   }
 
 }
