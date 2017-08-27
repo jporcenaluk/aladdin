@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AddressService } from './address.service';
 
 @Component({
   selector: 'app-address',
@@ -7,15 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddressComponent implements OnInit {
 
-  constructor() { }
+  constructor(private addressService: AddressService) { 
+
+  }
 
   ngOnInit() {
   }
 
   public currentCount = 0;
+  public data = {};
   
   public incrementCounter() {
       this.currentCount++;
+  }
+
+  public getDataFromService() {
+    this.data = this.addressService.getData();
   }
 
 }
