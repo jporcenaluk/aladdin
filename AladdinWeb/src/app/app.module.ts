@@ -11,6 +11,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { ThanksComponent } from './thanks/thanks.component';
 import { AgmCoreModule } from '@agm/core';
 import { SelectionItemComponent } from './selection-item/selection-item.component';
+import { AdvertiseComponent } from './advertise/advertise.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SelectionItemComponent } from './selection-item/selection-item.componen
     UserComponent,
     NavigationComponent,
     ThanksComponent,
-    SelectionItemComponent
+    SelectionItemComponent,
+    AdvertiseComponent
   ],
   imports: [
     BrowserModule,
