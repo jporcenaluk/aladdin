@@ -10,6 +10,7 @@ import { UserComponent } from './user/user.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { ThanksComponent } from './thanks/thanks.component';
 import { AgmCoreModule } from '@agm/core';
+import { SelectionItemComponent } from './selection-item/selection-item.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AgmCoreModule } from '@agm/core';
     SelectionComponent,
     UserComponent,
     NavigationComponent,
-    ThanksComponent
+    ThanksComponent,
+    SelectionItemComponent
   ],
   imports: [
     BrowserModule,
