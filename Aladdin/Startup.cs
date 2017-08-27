@@ -31,7 +31,7 @@ namespace AladdinDotNetNew
 
         // ConfigureServices is where you register dependencies. This gets
         // called by the runtime before the Configure method, below.
-        public IServiceProvider ConfigureServices(IServiceCollection services)
+        public void ConfigureServices(IServiceCollection services)
         {
             // Add services to the collection.
             services.AddMvc();

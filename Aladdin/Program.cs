@@ -10,18 +10,21 @@ using Microsoft.Extensions.Logging;
 
 namespace AladdinDotNetNew
 {
-    public static void Main(string[] args)
+    public class Program
     {
-        var host = new WebHostBuilder()
-            .UseKestrel()
-            .UseContentRoot(Directory.GetCurrentDirectory())
-            .UseSetting("detailedErrors", "true")
-            .UseIISIntegration()
-            .UseStartup<Startup>()
-            .CaptureStartupErrors(true)
-            .UseApplicationInsights()
-            .Build();
+        public static void Main(string[] args)
+        {
+            var host = new WebHostBuilder()
+                .UseKestrel()
+                .UseContentRoot(Directory.GetCurrentDirectory())
+                .UseSetting("detailedErrors", "true")
+                .UseIISIntegration()
+                .UseStartup<Startup>()
+                .CaptureStartupErrors(true)
+                .UseApplicationInsights()
+                .Build();
 
-        host.Run();
+            host.Run();
+        }
     }
 }
