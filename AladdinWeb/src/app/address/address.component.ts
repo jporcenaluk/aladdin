@@ -12,4 +12,10 @@ export class AddressComponent implements OnInit {
   ngOnInit() {
   }
 
+  public currentCount = 0;
+  
+  public incrementCounter() {
+      this.currentCount++;
+  }
+
 }
