@@ -8,6 +8,7 @@ import { SelectionComponent } from './selection/selection.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserComponent } from './user/user.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { ThanksComponent } from './thanks/thanks.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { NavigationComponent } from './navigation/navigation.component';
     AddressComponent,
     SelectionComponent,
     UserComponent,
-    NavigationComponent
+    NavigationComponent,
+    ThanksComponent
   ],
   imports: [
     BrowserModule,
