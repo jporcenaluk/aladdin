@@ -14,6 +14,7 @@ export class AddressComponent implements OnInit {
 
   lat: number = 51.678418;
   lng: number = 7.809007;
+  address: HTMLInputElement;
 
   constructor(private http: HttpClient) { 
 
@@ -22,11 +23,9 @@ export class AddressComponent implements OnInit {
   ngOnInit() {
   }
 
-  public currentCount = 0;
-  public data = "";
   
-  public incrementCounter() {
-      this.currentCount++;
+  public getAddress() {
+      this.address.value = "Hey";
   }
 
 
