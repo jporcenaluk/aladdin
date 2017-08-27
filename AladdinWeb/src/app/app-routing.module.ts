@@ -13,6 +13,9 @@ const routes: Routes = [
   },
   {
     path: 'address', component: AddressComponent
+  },
+  {
+    path: 'user', component: UserComponent
   }
 ];
 

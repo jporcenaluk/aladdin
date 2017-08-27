@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+.container {
+    padding-top: 20px;
+
+}
+
+.navigation-row {
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+    padding-bottom: 15px;
+}
+
+body {
+    background-color: #1DA6F5 !important;
+}

@@ -1,0 +1,12 @@
+.container {
+    padding-top: 20px;
+
+}
+
+.navigation-row {
+    border-bottom: 1px solid #ccc;
+}
+
+body {
+    background-color: red !important;
+}
